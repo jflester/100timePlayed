@@ -8,6 +8,7 @@ Script will scrape list of member from the the100.io for group ID you specify<br
 Next it will call the Bungie API and get the time played for each member<br>
 
 # WHAT STATE IS IT IN? #
+Time played reflects both battle and social space. Working on battle time only.
 Beta<br>
 No error handling yet<br>
 Works for me where expected<br>
