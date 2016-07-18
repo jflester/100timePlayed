@@ -3,7 +3,7 @@
 clear
 
 ########################################
-####    the100.io TimePlayed v2.5   ####
+####    the100.io TimePlayed v2.6   ####
 ####  Calls Bungie API to get grim  ####
 #### 	  the100:  /u/L0r3          ####
 ####      Reddit:  /u/L0r3_Titan    ####
@@ -38,7 +38,7 @@ funcMemID ()
 {
 getUser=`curl -s -X GET \
 -H "Content-Type: application/json" -H "Accept: application/xml" -H "$authKey" \
-"http://www.bungie.net/Platform/Destiny/SearchDestinyPlayer/$selectedAccountType/$player/"`
+"https://www.bungie.net/Platform/Destiny/SearchDestinyPlayer/$selectedAccountType/$player/"`
 memID=`echo "$getUser" | grep -o 'membershipId.*' | cut -c 16- | sed 's/displayName.*[^displayName]*//' | rev | cut -c 4- | rev`
 }
 
